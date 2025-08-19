@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Luxury Resort Design System - Premium hotel & resort aesthetic
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base Colors - Warm luxury palette */
+    --background: 35 20% 98%;
+    --foreground: 25 10% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 15% 97%;
+    --card-foreground: 25 10% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 20% 98%;
+    --popover-foreground: 25 10% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Sophisticated Gold */
+    --primary: 45 85% 35%;
+    --primary-foreground: 35 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm Beige */
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 25 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Soft Neutrals */
+    --muted: 35 15% 92%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Warm Bronze */
+    --accent: 25 45% 65%;
+    --accent-foreground: 35 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 20% 85%;
+    --input: 35 15% 92%;
+    --ring: 45 85% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Luxury Resort Specific Colors */
+    --luxury-gold: 45 85% 35%;
+    --luxury-gold-light: 45 65% 55%;
+    --luxury-bronze: 25 45% 65%;
+    --luxury-cream: 35 25% 95%;
+    --luxury-beige: 35 25% 90%;
+    --luxury-charcoal: 25 10% 15%;
+    --luxury-grey: 25 8% 45%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 45% 65% / 0.1), hsl(45 85% 35% / 0.1));
+    --gradient-luxury: linear-gradient(120deg, hsl(45 85% 35%), hsl(25 45% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(35 25% 98%), hsl(35 15% 95%));
+
+    /* Shadows */
+    --shadow-luxury: 0 20px 60px -10px hsl(25 10% 15% / 0.1);
+    --shadow-elegant: 0 8px 30px -8px hsl(45 85% 35% / 0.15);
+    --shadow-soft: 0 4px 20px -4px hsl(25 8% 45% / 0.1);
+
+    /* Transitions */
+    --transition-luxury: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +128,101 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Typography Hierarchy */
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-foreground;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-foreground;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl font-medium text-foreground;
+  }
+
+  .text-luxury-gold {
+    color: hsl(var(--luxury-gold));
+  }
+
+  .text-luxury-bronze {
+    color: hsl(var(--luxury-bronze));
+  }
+
+  .text-luxury-grey {
+    color: hsl(var(--luxury-grey));
+  }
+
+  .bg-luxury-cream {
+    background-color: hsl(var(--luxury-cream));
+  }
+
+  .bg-luxury-beige {
+    background-color: hsl(var(--luxury-beige));
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-luxury {
+    background: var(--gradient-luxury);
+  }
+
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .transition-luxury {
+    transition: var(--transition-luxury);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+@layer components {
+  /* Custom button variants */
+  .btn-luxury {
+    @apply bg-gradient-luxury text-primary-foreground px-8 py-4 rounded-lg font-medium tracking-wide shadow-elegant hover:shadow-luxury transition-luxury hover:scale-[1.02];
+  }
+
+  .btn-outline-luxury {
+    @apply border-2 border-primary bg-transparent text-primary px-8 py-4 rounded-lg font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-luxury;
+  }
+
+  .btn-call {
+    @apply fixed bottom-6 right-6 z-50 bg-gradient-luxury text-primary-foreground px-6 py-4 rounded-full shadow-luxury hover:shadow-elegant transition-luxury hover:scale-[1.05];
+  }
+
+  /* Hero overlay */
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%);
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-luxury hover:shadow-luxury hover:-translate-y-2;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .container-luxury {
+    @apply container mx-auto px-6 lg:px-8;
   }
 }
