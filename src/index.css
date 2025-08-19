@@ -2,60 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Luxury Resort Design System - Premium hotel & resort aesthetic
+/* Indian Luxury Resort Design System - Rich Indian heritage colors
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Base Colors - Warm luxury palette */
-    --background: 35 20% 98%;
-    --foreground: 25 10% 15%;
+    /* Base Colors - Warm Indian palette */
+    --background: 35 30% 97%;
+    --foreground: 15 25% 15%;
 
-    --card: 35 15% 97%;
-    --card-foreground: 25 10% 15%;
+    --card: 35 25% 96%;
+    --card-foreground: 15 25% 15%;
 
-    --popover: 35 20% 98%;
-    --popover-foreground: 25 10% 15%;
+    --popover: 35 30% 97%;
+    --popover-foreground: 15 25% 15%;
 
-    /* Primary - Sophisticated Gold */
-    --primary: 45 85% 35%;
-    --primary-foreground: 35 20% 98%;
+    /* Primary - Rich Saffron Gold */
+    --primary: 35 95% 50%;
+    --primary-foreground: 35 30% 97%;
 
-    /* Secondary - Warm Beige */
-    --secondary: 35 25% 90%;
-    --secondary-foreground: 25 15% 25%;
+    /* Secondary - Warm Terracotta */
+    --secondary: 15 45% 85%;
+    --secondary-foreground: 15 40% 25%;
 
-    /* Muted - Soft Neutrals */
-    --muted: 35 15% 92%;
-    --muted-foreground: 25 8% 45%;
+    /* Muted - Soft Indian Clay */
+    --muted: 25 25% 90%;
+    --muted-foreground: 15 20% 45%;
 
-    /* Accent - Warm Bronze */
-    --accent: 25 45% 65%;
-    --accent-foreground: 35 20% 98%;
+    /* Accent - Deep Maroon */
+    --accent: 0 45% 35%;
+    --accent-foreground: 35 30% 97%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 20% 98%;
+    --destructive-foreground: 35 30% 97%;
 
-    --border: 35 20% 85%;
-    --input: 35 15% 92%;
-    --ring: 45 85% 35%;
+    --border: 25 30% 82%;
+    --input: 25 25% 90%;
+    --ring: 35 95% 50%;
 
     --radius: 0.75rem;
 
-    /* Luxury Resort Specific Colors */
-    --luxury-gold: 45 85% 35%;
-    --luxury-gold-light: 45 65% 55%;
-    --luxury-bronze: 25 45% 65%;
-    --luxury-cream: 35 25% 95%;
-    --luxury-beige: 35 25% 90%;
-    --luxury-charcoal: 25 10% 15%;
-    --luxury-grey: 25 8% 45%;
+    /* Indian Heritage Colors */
+    --saffron: 35 95% 50%;
+    --saffron-light: 40 85% 65%;
+    --deep-orange: 25 90% 45%;
+    --royal-red: 0 70% 40%;
+    --turmeric: 45 85% 55%;
+    --ivory: 40 40% 96%;
+    --terracotta: 15 45% 65%;
+    --sandalwood: 30 30% 85%;
+    --henna: 15 60% 35%;
+    --marigold: 45 95% 55%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 65% / 0.1), hsl(45 85% 35% / 0.1));
-    --gradient-luxury: linear-gradient(120deg, hsl(45 85% 35%), hsl(25 45% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(35 25% 98%), hsl(35 15% 95%));
+    /* Indian Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 70% 40% / 0.15), hsl(35 95% 50% / 0.15));
+    --gradient-saffron: linear-gradient(120deg, hsl(35 95% 50%), hsl(25 90% 45%));
+    --gradient-royal: linear-gradient(135deg, hsl(0 70% 40%), hsl(15 60% 35%));
+    --gradient-warm: linear-gradient(180deg, hsl(40 40% 96%), hsl(30 30% 90%));
 
     /* Shadows */
     --shadow-luxury: 0 20px 60px -10px hsl(25 10% 15% / 0.1);
@@ -144,32 +148,44 @@ All colors MUST be HSL.
     @apply text-xl md:text-2xl lg:text-3xl font-medium text-foreground;
   }
 
-  .text-luxury-gold {
-    color: hsl(var(--luxury-gold));
+  .text-saffron {
+    color: hsl(var(--saffron));
   }
 
-  .text-luxury-bronze {
-    color: hsl(var(--luxury-bronze));
+  .text-royal-red {
+    color: hsl(var(--royal-red));
   }
 
-  .text-luxury-grey {
-    color: hsl(var(--luxury-grey));
+  .text-henna {
+    color: hsl(var(--henna));
   }
 
-  .bg-luxury-cream {
-    background-color: hsl(var(--luxury-cream));
+  .text-deep-orange {
+    color: hsl(var(--deep-orange));
   }
 
-  .bg-luxury-beige {
-    background-color: hsl(var(--luxury-beige));
+  .bg-ivory {
+    background-color: hsl(var(--ivory));
+  }
+
+  .bg-sandalwood {
+    background-color: hsl(var(--sandalwood));
+  }
+
+  .bg-terracotta {
+    background-color: hsl(var(--terracotta));
   }
 
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
 
-  .bg-gradient-luxury {
-    background: var(--gradient-luxury);
+  .bg-gradient-saffron {
+    background: var(--gradient-saffron);
+  }
+
+  .bg-gradient-royal {
+    background: var(--gradient-royal);
   }
 
   .shadow-luxury {
@@ -195,16 +211,16 @@ All colors MUST be HSL.
 
 @layer components {
   /* Custom button variants */
-  .btn-luxury {
-    @apply bg-gradient-luxury text-primary-foreground px-8 py-4 rounded-lg font-medium tracking-wide shadow-elegant hover:shadow-luxury transition-luxury hover:scale-[1.02];
+  .btn-indian-luxury {
+    @apply bg-gradient-saffron text-primary-foreground px-8 py-4 rounded-lg font-medium tracking-wide shadow-elegant hover:shadow-luxury transition-luxury hover:scale-[1.02];
   }
 
-  .btn-outline-luxury {
+  .btn-outline-indian {
     @apply border-2 border-primary bg-transparent text-primary px-8 py-4 rounded-lg font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-luxury;
   }
 
   .btn-call {
-    @apply fixed bottom-6 right-6 z-50 bg-gradient-luxury text-primary-foreground px-6 py-4 rounded-full shadow-luxury hover:shadow-elegant transition-luxury hover:scale-[1.05];
+    @apply fixed bottom-6 right-6 z-50 bg-gradient-saffron text-primary-foreground px-6 py-4 rounded-full shadow-luxury hover:shadow-elegant transition-luxury hover:scale-[1.05];
   }
 
   /* Hero overlay */
