@@ -9,9 +9,9 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-luxury-cream">
       <div className="container-luxury">
         <div className="text-center mb-16">
-          <h2 className="mb-6">Contact & Reservations</h2>
-          <p className="text-xl text-luxury-grey max-w-3xl mx-auto leading-relaxed">
-            Ready to experience paradise? Contact our luxury concierge team to plan your perfect getaway.
+          <h2 className="mb-6">যোগাযোগ করুন (Contact Us)</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Ready to experience authentic Bengali hospitality? Contact our family to plan your cultural stay.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Contact = () => {
                     <p className="text-luxury-grey">Call us anytime</p>
                   </div>
                 </div>
-                <p className="text-xl font-light text-luxury-gold">+1 (555) 123-4567</p>
+                <p className="text-xl font-light text-primary">+91 98765 43210</p>
               </CardContent>
             </Card>
 
@@ -44,7 +44,7 @@ const Contact = () => {
                     <p className="text-luxury-grey">Get in touch</p>
                   </div>
                 </div>
-                <p className="text-luxury-gold">reservations@sereneshores.com</p>
+                <p className="text-primary">stay@shubhohomestay.com</p>
               </CardContent>
             </Card>
 
@@ -56,10 +56,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium">Location</h3>
-                    <p className="text-luxury-grey">Paradise Bay</p>
+                    <p className="text-muted-foreground">Shillong, Meghalaya</p>
                   </div>
                 </div>
-                <p className="text-luxury-grey">123 Oceanfront Drive<br />Paradise Bay, Tropical Island 12345</p>
+                <p className="text-muted-foreground">123 Traditional Lane<br />Shillong, Meghalaya 793001</p>
               </CardContent>
             </Card>
 
@@ -71,10 +71,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium">Hours</h3>
-                    <p className="text-luxury-grey">Concierge available</p>
+                    <p className="text-muted-foreground">Family available</p>
                   </div>
                 </div>
-                <p className="text-luxury-grey">24/7 Luxury Service</p>
+                <p className="text-muted-foreground">8 AM - 10 PM Daily</p>
               </CardContent>
             </Card>
           </div>
@@ -151,10 +151,10 @@ const Contact = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-luxury rounded-2xl p-8 lg:p-12 text-white">
-          <h3 className="text-3xl font-light mb-4">Ready to Experience Paradise?</h3>
+        <div className="mt-16 text-center bg-gradient-saffron rounded-2xl p-8 lg:p-12 text-white">
+          <h3 className="text-3xl font-light mb-4">Ready to Experience Bengali Culture?</h3>
           <p className="text-xl mb-8 text-white/90">
-            Book your luxury escape today and discover why Serene Shores is the ultimate tropical retreat.
+            Book your cultural homestay today and become part of our Bengali family.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-white text-foreground hover:bg-white/90 text-lg px-10 py-6">

@@ -3,26 +3,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import suiteImage from "@/assets/suite-ocean.jpg";
 
 const Rooms = () => {
-  const rooms = [
+const rooms = [
     {
-      name: "Ocean View Suite",
-      description: "Spacious suite with panoramic ocean views, marble bathroom, and private balcony",
-      price: "From $450/night",
-      features: ["King bed", "Ocean view", "Marble bathroom", "Private balcony"],
+      name: "শান্তি ঘর (Shanti Room)",
+      description: "Peaceful room with traditional Bengali decor, comfortable bedding, and garden views",
+      price: "₹2,500/night",
+      features: ["Traditional bed", "Garden view", "Attached bathroom", "Cultural artifacts"],
       image: suiteImage,
     },
     {
-      name: "Beachfront Villa",
-      description: "Luxury villa steps from the beach with direct access and premium amenities",
-      price: "From $850/night", 
-      features: ["2 bedrooms", "Beach access", "Private pool", "Butler service"],
+      name: "আনন্দ ঘর (Anando Room)",
+      description: "Joyful family room with Bengali traditional furniture and cultural experiences",
+      price: "₹4,000/night", 
+      features: ["Family space", "Cultural corner", "Traditional furniture", "Home-cooked meals"],
       image: suiteImage,
     },
     {
-      name: "Presidential Suite",
-      description: "Ultimate luxury with expansive living areas and exclusive resort privileges",
-      price: "From $1,200/night",
-      features: ["3 bedrooms", "Living room", "Private chef", "Exclusive access"],
+      name: "প্রেম ঘর (Prem Suite)",
+      description: "Romantic suite for couples with traditional Bengali hospitality and privacy",
+      price: "₹5,500/night",
+      features: ["Private space", "Cultural activities", "Traditional meals", "Personal attention"],
       image: suiteImage,
     },
   ];
@@ -31,10 +31,10 @@ const Rooms = () => {
     <section id="rooms" className="section-padding bg-luxury-cream">
       <div className="container-luxury">
         <div className="text-center mb-16">
-          <h2 className="mb-6">Luxury Accommodations</h2>
-          <p className="text-xl text-luxury-grey max-w-3xl mx-auto leading-relaxed">
-            Each room and suite at Serene Shores is designed to provide the ultimate in comfort and elegance, 
-            featuring premium amenities and breathtaking views.
+          <h2 className="mb-6">আমাদের ঘর সমূহ (Our Rooms)</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Experience authentic Bengali hospitality in our thoughtfully designed rooms, each reflecting the warmth 
+            and cultural richness of traditional Bengali homes.
           </p>
         </div>
 

@@ -10,20 +10,25 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
         <h1 className="mb-6 leading-tight">
-          Welcome to <span className="text-saffron">Royal</span> <span className="text-deep-orange">Heritage</span>
+          আপনাকে স্বাগতম <span className="text-saffron">বাংলার</span> <span className="text-deep-orange">ঐতিহ্যে</span>
         </h1>
+        <h2 className="text-2xl md:text-3xl mb-4 text-saffron font-medium">
+          Shubho Bengali Homestay
+        </h2>
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-          Experience the grandeur of Indian hospitality with authentic luxury and timeless traditions
+          Experience authentic Bengali culture, traditional hospitality, and the warmth of a home away from home
         </p>
         
-        
+        <div className="mb-8 text-white/80">
+          <p className="text-lg">• Traditional Bengali cuisine • Cultural experiences • Family atmosphere •</p>
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button className="btn-indian-luxury text-lg px-8 py-3">
-            Book Your Royal Stay
+            বুক করুন এখনই
           </Button>
           <Button variant="outline" className="btn-outline-indian text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
-            Explore Heritage
+            Explore Bengali Culture
           </Button>
         </div>
         
