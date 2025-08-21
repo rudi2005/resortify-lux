@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="section-padding bg-luxury-cream">
+  return <section id="contact" className="section-padding bg-luxury-cream">
       <div className="container-luxury">
         <div className="text-center mb-16">
           <h2 className="mb-6">যোগাযোগ করুন (Contact Us)</h2>
@@ -134,11 +132,7 @@ const Contact = () => {
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
                       Message
                     </label>
-                    <Textarea 
-                      id="message" 
-                      rows={4} 
-                      placeholder="Tell us about your perfect stay..."
-                    />
+                    <Textarea id="message" rows={4} placeholder="Tell us about your perfect stay..." />
                   </div>
 
                   <Button className="btn-luxury w-full md:w-auto px-12">
@@ -160,17 +154,12 @@ const Contact = () => {
             <Button className="bg-white text-foreground hover:bg-white/90 text-lg px-10 py-6">
               Book Your Stay
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-foreground text-lg px-10 py-6"
-            >
+            <Button variant="outline" className="border-2 border-white hover:bg-white text-lg px-10 py-6 text-slate-950">
               Call Now
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-white">
+          <div className="text-white text-base">
             <h2 className="font-medium text-base">
               <span className="text-saffron">শুভ</span> Homestay
             </h2>
