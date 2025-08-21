@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-white text-base">
-            <h2 className="font-medium text-base">
+            <h2 className="font-medium text-xl">
               <span className="text-saffron">শুভ</span> Homestay
             </h2>
           </div>
