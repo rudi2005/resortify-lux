@@ -56,19 +56,19 @@ const HeroSlideshow = () => {
           
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white px-6 max-w-4xl mx-auto animate-fade-in">
-              <h1 className="mb-4 leading-tight">{slide.title}</h1>
-              <h2 className="text-2xl md:text-3xl mb-4 text-saffron font-medium">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl mb-4 leading-tight">{slide.title}</h1>
+              <h2 className="text-lg md:text-2xl lg:text-3xl mb-4 text-saffron font-medium">
                 {slide.subtitle}
               </h2>
-              <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
+              <p className="text-base md:text-lg lg:text-xl mb-6 text-white/90 max-w-2xl mx-auto">
                 {slide.description}
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button className="btn-indian-luxury text-lg px-8 py-3">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <Button className="btn-indian-luxury text-base px-6 py-2">
                   বুক করুন এখনই
                 </Button>
-                <Button variant="outline" className="btn-outline-indian text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+                <Button variant="outline" className="btn-outline-indian text-base px-6 py-2 border-white text-white hover:bg-white hover:text-primary">
                   Explore Culture
                 </Button>
               </div>

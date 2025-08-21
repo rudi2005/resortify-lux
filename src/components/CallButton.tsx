@@ -15,8 +15,8 @@ const CallButton = () => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className="btn-call group">
-          <Phone className="w-6 h-6 mr-2 group-hover:animate-pulse" />
+        <Button className="btn-call group text-sm px-4 py-2">
+          <Phone className="w-4 h-4 mr-2 group-hover:animate-pulse" />
           Call Now
         </Button>
       </DialogTrigger>

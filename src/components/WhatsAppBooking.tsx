@@ -115,10 +115,10 @@ const WhatsAppBooking = () => {
 
               <Button 
                 onClick={handleBooking}
-                className="w-full btn-indian-luxury text-lg py-4 flex items-center justify-center gap-2"
+                className="w-full btn-indian-luxury text-base py-3 flex items-center justify-center gap-2"
                 disabled={!formData.arrivalDate || !formData.name}
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-4 h-4" />
                 Book via WhatsApp
               </Button>
 
